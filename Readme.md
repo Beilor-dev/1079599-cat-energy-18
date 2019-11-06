@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Oleg Gorbunov](https://up.htmlacademy.ru/adaptive/18/user/1079599).
-* Наставник: `Неизвестно`.
+* Наставник: Сергей Вилков.
 
 ---
 
