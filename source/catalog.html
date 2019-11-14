@@ -2,12 +2,12 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Кэт энерджи</title>
+    <title>HTML Academy: Кэт энерджи каталог</title>
   </head>
   <body>
     <header class="page-header">
       <div class="page-header__wrapper">
-        <a class="page-header__logo">
+        <a class="page-header__logo" href="index.html">
           <picture class="logo__box">
             <img class="logo__image" src="https://via.placeholder.com/150x150" alt="Логотип Cat Energy">
           </picture>
@@ -196,14 +196,53 @@
             <a class="product__button" href="#">Заказать</a>
           </div>
           <div class="catalog_product catalog_product--more more-product">
+            <span class="more-product__plus"></span>
             <b class="more-product__title">Показать еще 100500 товаров</b>
             <p class="more-product__desc">На самом деле вкусов гораздо больше!</p>
             <a class="more-product__button" href="#">Показать все</a>
           </div>
         </div>
+        <section class="catalog__additional-product">
+          <h2 class="additional-product__title">Дополнительные товары</h2>
+          <div class="additional-product__list">
+            <div class="additional-product__item">
+              <h3 class="additional-product__subtitle">Сахарозаменитель</h3>
+              <p class="additional-product__desc">1 упаковка (100 г) 200 р.</p>
+              <a class="additional-product__button" href="#">Заказать</a>
+            </div>
+            <div class="additional-product__item">
+              <h3 class="additional-product__subtitle">Питьевая вода</h3>
+              <p class="additional-product__desc">5 литров 50 р.</p>
+              <a class="additional-product__button" href="#">Заказать</a>
+            </div>
+            <div class="additional-product__item">
+              <h3 class="additional-product__subtitle">Молоко</h3>
+              <p class="additional-product__desc">1 литр 100 р.</p>
+              <a class="additional-product__button" href="#">Заказать</a>
+            </div>
+            <div class="additional-product__item">
+              <h3 class="additional-product__subtitle">Витамины</h3>
+              <p class="additional-product__desc">1 упаковка (30 г) 300 р.</p>
+              <a class="additional-product__button" href="#">Заказать</a>
+            </div>
+          </div>
+          <div class="additional-product__promo">
+              <p class="additional-product__text">Закажите все и получите чехол для кота в подарок!</p> 
+          </div>
+        </section>
       </div>
     </main>
     <footer class="page-footer">
+      <section class="page-footer__contacts">
+        <h2 class="visually-hidden">Контакты</h2>
+        <div class="contacts__wrapper">
+          <div class="contacts__box">
+            <b class="contacts__invite">Приглашаем к сотрудничеству дилеров!</b>
+            <p class="contacts__adds">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+          </div>
+          <iframe class="contacts__map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1998.6037861610246!2d30.3208587!3d59.9387165!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1557312282425!5m2!1sru!2sru"></iframe>
+        </div>
+      </section>
       <div class="page-footer__wrapper">
       <a class="page-footer__logo" href="#">
         <img src="https://via.placeholder.com/150x150" alt="Cat Energy">
@@ -219,7 +258,7 @@
           <a class="social__link" href="#">Мы в Фейсбук</a>
         </li>
       </ul>
-      <a class="page-footer__copyright" href="#">
+      <a class="page-footer__copyright" href="https://htmlacademy.ru/intensive/adaptive">
         <span class="copyright__name">HTML Academy</span>
         <svg></svg>
       </a>
