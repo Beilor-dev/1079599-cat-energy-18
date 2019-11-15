@@ -40,15 +40,80 @@
           <fieldset class="option__cat-info cat-info">
             <legend class="visually-hidden">Данные кота</legend>
             <ul class="cat-info__list">
-              <li class="cat-info__item"></li>
-              <li class="cat-info__item"></li>
-              <li class="cat-info__item"></li>
+              <li class="cat-info__item">
+                <label for="cat-info__name">Имя*</label>
+                <input type="text" name="cat-name" placeholder="Барсик" id="cat-info__name">
+              </li>
+              <li class="cat-info__item">
+                <label for="cat-info__weight">Вес(кг):*</label>
+                <input type="text" name="cat-weight" min="1" max="35" step="1" value="7" id="cat-info__weight">
+              </li>
+              <li class="cat-info__item">
+                <label for="cat-info__years">Возраст (лет):</label>
+                <input type="text" name="cat-years" min="1" max="35" step="1" value="7" id="cat-info__years">
+              </li>
             </ul>
           </fieldset>
-          <fieldset></fieldset>
-          <fieldset></fieldset>
-          <fieldset></fieldset>
-          <fieldset></fieldset>
+          <fieldset class="option__project project-info">
+            <legend class="visually-hidden">Выбор программы</legend>
+            <ul class="project__list">
+              <li class="project__item">
+                <input type="radio" name="project" value="slim" id="project__slim" checked>
+                <label for="project__slim">Похудение</label>
+              </li>
+              <li class="project__item">
+                <input type="radio" name="project" value="weight" id="project__weight">
+                <label for="project__weight">Набор массы</label>
+              </li>
+              <li class="project__item">
+                <input type="radio" name="project" value="help" id="project__help">
+                <label for="project__help">Не знаю (нужен ваш совет)</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="option__box contact-details">
+            <legend class="option__subtitle contact_details__subtitle">Контактные данные (владельца кота)</legend>
+            <ul class="contact-details__list">
+              <li class="contact-details__item contact-details__item--email">
+                <label for="contact-details__email">E-mail::*</label>
+                <input type="email" name="contact-email" placeholder="kuklachev@gmail.com" id="contact-details__email">
+                <svg width="20" heigh="20"></svg>
+              </li>
+              <li class="contact-details__item contact-details__item--phone">
+                <label for="contact-details__phone">Телефон:*</label>
+                <input type="email" name="contact-phone" placeholder="8 (960) 900-60-90" id="contact-details__phone">
+                <svg></svg>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="option__box reviews">
+            <legend class="option__subtitle comments__subtitle">Комментарий</legend>
+              <p class="comments__text">
+                <textarea name="comments-text" placeholder="Расскажите обо всех повадках кота" id="comments__text"></textarea>
+                <label class="visually-hidden" for="comments__text">Комментарий</label>
+              </p>
+          </fieldset>
+          <fieldset class="option__box ">
+            <legend class="selection__subtitle extra__subtitle">Дополнительно</legend>
+            <ul class="extra__list">
+              <li class="extra__item">
+                <input type="checkbox" name="extra" value="sugar" id="extra__sugar" checked>
+                <label for="extra__sugar">Сахарозаменитель</label>
+              </li>
+              <li class="extra__item">
+                <input type="checkbox" name="extra" value="water" id="extra__water">
+                <label for="extra__water">Питьевая вода</label>
+              </li>
+              <li class="extra__item">
+                <input type="checkbox" name="extra" value="milk" id="extra__milk">
+                <label for="extra__milk">Молоко</label>
+              </li>
+              <li class="extra__item">
+                <input type="checkbox" name="extra" value="vitamin" id="extra__vitamin">
+                <label for="extra__vitamin">Витамины</label>
+              </li>
+            </ul>
+          </fieldset>
           <div class="option__footer">
             <button class="option__button" type="submit">Отправить заявку</button>
             <p class="option__note">* — Обязательные поля</p>
