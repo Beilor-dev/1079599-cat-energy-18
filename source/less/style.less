@@ -1,3 +1,16 @@
+@mobile-width: 320px;
+@mobile-padding: 20px;
+
+@color-1: #444444;
+@color-2: #000000;
+@color-3: #ffffff;
+
+@bg-1: #ffffff;
+@bg-2: #63a73a;
+@bg-2: #f2f2f2;
+
+@font: "Oswald", Arial, sans-serif;
+
 @font-face {
   font-weight: 400;
   font-family: "Oswald";
@@ -15,5 +28,32 @@
 }
 
 body {
-  background: red;
+  min-width: @mobile-width;
+  margin: 0;
+
+  font-size: 14px;
+  line-height: 18px;
+  font-family: Arial, sans-serif;
+  color: @color-1;
+
+  background-color: @bg-1;
 }
+
+.vissually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+}
+
+@import "blocks/logo.less";
+@import "blocks/main-nav.less";
+
+@import "blocks/page-header.less";
