@@ -9,18 +9,20 @@
   <body>
     <header class="page-header">
       <div class="page-header__wrapper">
-        <a class="page-header__logo">
+        <a class="page-header__logo logo">
           <picture class="logo__box">
-            <img class="logo__image" src="https://via.placeholder.com/150x150" alt="Логотип Cat Energy">
+            <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+            <img class="logo__image" src=img/logo-mobile.svg width="33" height="38" alt="Логотип Cat Energy">
           </picture>
         </a>
-        <nav class="page-header__main-nav">
-          <button class="main-nav__switch">
-            <span>Открыть/зыкрыть меню</span>
+        <nav class="page-header__main-nav main-nav main-nav--close">
+          <button class="main-nav__switch" type="button">
+            <span class="visually-hidden">Открыть/зыкрыть меню</span>
           </button>
           <ul class="main-nav__list">
             <li class="main-nav__item">
-              <a class="main-nav__link" href="index.html">Главная</a>
+              <a class="main-nav__link main-nav__link--active" href="index.html">Главная</a>
             </li>
             <li class="main-nav__item">
               <a class="main-nav__link" href="index.html">Каталог продукции</a>

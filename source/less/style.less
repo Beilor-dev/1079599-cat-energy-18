@@ -1,5 +1,11 @@
+//variables.less
+
 @mobile-width: 320px;
 @mobile-padding: 20px;
+@tablet-width: 768px;
+@tablet-padding: 30px;
+@desktop-width: 1440px;
+@desktop-padding: 110px;
 
 @color-1: #444444;
 @color-2: #000000;
@@ -39,7 +45,7 @@ body {
   background-color: @bg-1;
 }
 
-.vissually-hidden {
+.visually-hidden {
   position: absolute;
 
   width: 1px;
@@ -51,9 +57,11 @@ body {
 
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 @import "blocks/logo.less";
 @import "blocks/main-nav.less";
 
 @import "blocks/page-header.less";
+@import "blocks/button.less";
