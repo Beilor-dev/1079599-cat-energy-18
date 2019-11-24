@@ -3,46 +3,47 @@
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 29px;
-  padding: 0 20px;   
+  padding: 0 20px;
 }
 
 .power-supply__box {
   position: relative;
 
-  box-sizing:border-box;
+  box-sizing: border-box;
   margin-bottom: 20px;
   padding: 36px 20px 20px;
 
   background-color: @bg-3;
 
   &:last-child {
-      margin-bottom: 0;
-  } 
+    margin-bottom: 0;
+  }
 
   &::before {
-      content: "";
+    content: "";
 
-      position: absolute;
-      top: 15px;
-      left: 12px;
+    position: absolute;
+    top: 15px;
+    left: 12px;
 
-      width: 67px;
-      height: 67px;
+    width: 67px;
+    height: 67px;
 
-      background-repeat: no-repeat; 
+    background-repeat: no-repeat;
   }
+
   &--slim::before {
-      background-image:url(../img/icon-cat-slim.svg),
+    background-image:url("../img/icon-cat-slim.svg"),
       radial-gradient(circle, #68b738 24px, transparent 25px);
-      background-position: center 7px, center;
-      background-size: 35px 49px, 100%;
-      
+    background-position: center 7px, center;
+    background-size: 35px 49px, 100%;
   }
+
   &--pro::before {
-      background-image:url(../img/icon-cat-pro.svg),
+    background-image:url("../img/icon-cat-pro.svg"),
       radial-gradient(circle, #68b738 24px, transparent 25px);
-      background-position: center;
-      background-size: 67px 28px, 100%;
+    background-position: center;
+    background-size: 67px 28px, 100%;
   }
 }
 
@@ -64,7 +65,7 @@
   margin-bottom: 20px;
   padding-bottom: 22px;
 
-  border-bottom: 1px solid #d9d9d9;  
+  border-bottom: 1px solid #d9d9d9;
 }
 
 .power-supply__link {
@@ -80,29 +81,29 @@
   text-decoration: none;
 
   &::after {
-      content: "";
+    content: "";
 
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
 
-      width: 33px;
-      height: 11px;
-      margin: auto;
+    width: 33px;
+    height: 11px;
+    margin: auto;
 
-      background-image:url(../img/icon-right-arrow-long.svg);
-      background-repeat: no-repeat;
-      background-position: left;
-      background-size: 24px 11px;
+    background-image: url("../img/icon-right-arrow-long.svg");
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 24px 11px;
   }
 
   &:hover::after {
-      background-image:url(../img/icon-right-arrow-verylong.svg);
-      background-size: 33px 11px;
+    background-image: url("../img/icon-right-arrow-verylong.svg");
+    background-size: 33px 11px;
   }
-  
+
   &:active {
-      opacity: 0.3;
-  }  
+    opacity: 0.3;
+  }
 }

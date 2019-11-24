@@ -1,12 +1,11 @@
 .logo {
+  &:hover {
+    opacity: 0.8;
+  }
 
-    &:hover {
-        opacity: 0.8;
-    }
-
-    &:active {
-        opacity: 0.6;
-    }
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .logo__box {
@@ -34,7 +33,7 @@
     height: 18px;
     margin: auto;
 
-    background-image: url(../img/logo-text.svg);
+    background-image: url("../img/logo-text.svg");
     background-repeat: no-repeat;
     background-position: center;
   }
@@ -47,31 +46,28 @@
 }
 
 @media (min-width: @tablet-width) {
+  .logo__box {
+    width: auto;
+    height: auto;
+    padding: 0;
 
-    .logo__box {
-        width: auto;
-        height: auto;
-        padding: 0;
+    border-bottom: none;
 
-        border-bottom: none;
-
-        &::after {
-            content: none;
-        }
+    &::after {
+      content: none;
     }
+  }
 
-    .logo__image  {
-        width: 173px;
-        height: 58px;
-
-        margin-top: 0px;
-    }
+  .logo__image {
+    width: 173px;
+    height: 58px;
+    margin-top: 0;
+  }
 }
 
 @media (min-width: @desktop-width) {
-
-    .logo__image {
-        width: 202px;
-        height: 59px;
-    }
+  .logo__image {
+    width: 202px;
+    height: 59px;
+  }
 }

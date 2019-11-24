@@ -7,6 +7,9 @@
 @desktop-width: 1440px;
 @desktop-padding: 110px;
 
+@retina-dpi: 144dpi;
+@retina-dppx: 1.5dppx;
+
 @color-1: #444444;
 @color-2: #000000;
 @color-3: #ffffff;
@@ -39,7 +42,7 @@ body {
 
   font-size: 14px;
   line-height: 18px;
-  font-family: Arial, sans-serif;
+  font-family: "Arial", sans-serif;
   color: @color-1;
 
   background-color: @bg-1;
@@ -62,7 +65,6 @@ body {
 
 @import "blocks/logo.less";
 @import "blocks/main-nav.less";
-
 @import "blocks/page-header.less";
 @import "blocks/reclame.less";
 @import "blocks/button.less";
@@ -71,4 +73,6 @@ body {
 @import "blocks/page-footer.less";
 @import "blocks/social.less";
 @import "blocks/copyright.less";
-
+@import "blocks/catalog.less";
+@import "blocks/product.less";
+@import "blocks/more-product.less";
