@@ -1,0 +1,75 @@
+.specification {
+  margin-bottom: 42px;
+}
+
+.specification__wrapper {
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 20px;
+}
+
+.specification__title {
+  margin: 0;
+  margin-bottom: 40px;
+
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+  font-family: @font;
+  color: @color-2;
+}
+
+.specification__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.specification__item {
+  position: relative;
+
+  min-height: 60px;
+  margin-bottom: 20px;
+  padding-left: 80px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 60px;
+    height: 60px;
+
+    background-color: #68b738;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &--helpful::before {
+    background-image: url("../img/icon-helpful.png");
+    background-size: 26px 29px;
+  }
+
+  &--comfy::before {
+    background-image: url("../img/icon-comfy.png");
+    background-size: 29px 31px;
+  }
+
+  &--simply::before {
+    background-image: url("../img/icon-simply.png");
+    background-size: 23px 30px;
+  }
+
+  &--quick::before {
+    background-image: url("../img/icon-quick.png");
+    background-size: 26px 31px;
+  }
+}
