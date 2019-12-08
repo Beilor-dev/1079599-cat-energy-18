@@ -1,0 +1,140 @@
+.contacts {
+  background-color: #fef7ef;
+  background-image: url("../img/map-mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @media (min-resolution: @retina-dppx), (min-resolution: @retina-dpi) {
+    background-image: url("../img/map-mobile@2x.jpg");
+  }
+}
+
+.contacts__wrapper {
+  box-sizing: border-box;
+  width: 100%;
+  height: 477px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contacts__box {
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  min-height: 114px;
+  padding: 27px 20px;
+
+  background-color: @bg-1;
+}
+
+.inner-page .contacts__box {
+  background-color: #f2f2f2;
+}
+
+.contacts__invite {
+  width: 140px;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  font-family: @font;
+  color: @color-2;
+  text-transform: uppercase;
+}
+
+.contacts__adds {
+  width: 140px;
+  margin: 0;
+
+  line-height: 20px;
+}
+
+.contacts__map {
+  width: 100%;
+  height: 362px;
+
+  border: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .contacts {
+    background-image: url("../img/map-tablet.jpg");
+
+    @media (min-resolution: @retina-dppx), (min-resolution: @retina-dpi) {
+      background-image: url("../img/map-tablet@2x.jpg");
+    }
+  }
+
+  .contacts__wrapper {
+    height: 600px;
+  }
+
+  .contacts__box {
+    padding: 63px 72px 60px;
+  }
+
+  .contacts__invite {
+    width: 155px;
+
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .contacts__adds {
+    width: 155px;
+
+    font-size: 16px;
+    text-align: right;
+
+    span {
+      display: block;
+      padding-top: 18px;
+    }
+  }
+
+  .contacts__map {
+    height: 400px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .contacts {
+    background-image: url("../img/map-desktop.jpg");
+
+    @media (min-resolution: @retina-dppx), (min-resolution: @retina-dpi) {
+      background-image: url("../img/map-desktop@2x.jpg");
+    }
+  }
+
+  .contacts__wrapper {
+    position: relative;
+
+    height: 400px;
+  }
+
+  .contacts__box {
+    position: absolute;
+    top: 95px;
+    left: @desktop-padding;
+
+    width: 570px;
+    min-height: 201px;
+    padding: 65px 90px 60px 75px;
+  }
+
+  .inner-page .contacts__box {
+    background-color: @bg-1;
+  }
+
+  .contacts__invite {
+    width: 155px;
+  }
+
+  .contacts__adds {
+    text-align: left;
+  }
+
+  .contacts__map {
+    height: 400px;
+  }
+}
