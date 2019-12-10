@@ -102,19 +102,20 @@
             <ul class="action-slider__list">
               <li class="action-slider__item action-slider__item--before">
                 <picture class="action-slider__image-box">
-                  <img src="https://via.placeholder.com/150x150" alt="Изображение кота: До">
+                  <source media="(min-width: 768px)" srcset="img/cat-slider-before-tablet.png, img/cat-slider-before-tablet@2x.png 2x">
+                  <img src="img/cat-slider-before.png" srcset="img/cat-slider-before-tablet@2x.png 2x"  width="311" height="232" alt="Изображение кота: До">
                 </picture>
               </li>
-              <li class="action-slider__item action-slider__item--before">
-                <picture class="action-slider__image-box">
-                  <img src="https://via.placeholder.com/150x150" alt="Изображение кота: После">
+              <li class="action-slider__item action-slider__item--after">
+                <source media="(min-width: 768px)" srcset="img/cat-slider-after-tablet.png, img/cat-slider-after-tablet@2x.png 2x">
+                <img src="img/cat-slider-after.png" srcset="img/cat-slider-after-tablet@2x.png 2x"  width="311" height="232" alt="Изображение кота: После">
                 </picture>
               </li>
             </ul>
-            <div class="action-slider_control">
+            <div class="action-slider__control">
               <button class="action-slider__label action-slider__label--before">Было</button>
               <p class="action-slider__spacing">
-                <button class="action-slider__button" type="button">Ползунок</button>
+                <button class="action-slider__button" type="button"><span class="visually-hidden">Ползунок</span></button>
               </p>
               <button class="action-slider__label action-slider__label--after">Стало</button>
             </div>
