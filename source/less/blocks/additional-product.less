@@ -1,0 +1,110 @@
+.additional-product {
+  position: relative;
+
+  padding: 32px 20px 35px;
+}
+
+.additional-product__title {
+  position: relative;
+
+  display: inline-block;
+  margin: 0;
+  margin-bottom: 30px;
+  padding-right: 24px;
+
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  font-family: @font;
+  text-transform: none;
+
+  background-color: #ffffff;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    left: 0;
+    top: 13px;
+    z-index: -1;
+
+    width: 100vw;
+    height: 3px;
+
+    background-color: #68b738;
+  } 
+}
+
+.additional-product__list {
+  margin-bottom: 39px;
+
+  border-top: 1px solid #cdcdcd;
+}
+
+.additional-product__item {
+  padding: 14px 0 17px;
+
+  border-bottom: 1px solid #cdcdcd;
+}
+
+.additional-product__subtitle {
+  margin: 0;
+  margin-bottom: 13px;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  font-family: @font;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.additional-product__desc {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  margin-bottom: 14px;
+
+  line-height: 14px;
+}
+
+.additional-product__button {
+  clear: both;
+
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+
+  background-color: #68b738;
+}
+
+.additional-product__promo {
+  box-sizing: border-box;
+  width: 280px;
+  height: 289px;
+  margin: 0 auto;
+  padding: 65px 35px 40px;
+
+  background-color: #68b738;
+  background-image: url("../img/gift.jpg");
+
+  &::before {
+    content: "";
+
+    display: block;
+    width: 55px;
+    height: 60px;
+    margin: 0 auto 60px;
+
+    background-image: url("../img/icon-two-gift.svg");
+  }
+}
+
+.additional-product__text {
+  margin: 0;
+
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #ffffff;
+}
