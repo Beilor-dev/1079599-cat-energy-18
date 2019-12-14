@@ -59,12 +59,12 @@
             <legend class="visually-hidden">Данные кота</legend>
             <ul class="cat-info__list">
               <li class="cat-info__item">
-                <label for="cat-info__name">Имя*</label>
-                <input type="text" name="cat-name" placeholder="Барсик" id="cat-info__name">
+                <label for="cat-info__name">Имя:<sup>*</sup></label>
+                <input type="text" name="cat-name" placeholder="Барсик" id="cat-info__name" required>
               </li>
               <li class="cat-info__item">
-                <label for="cat-info__weight">Вес(кг):*</label>
-                <input type="text" name="cat-weight" min="1" max="35" step="1" value="7" id="cat-info__weight">
+                <label for="cat-info__weight">Вес (кг):<sup>*</sup></label>
+                <input type="text" name="cat-weight" min="1" max="35" step="1" value="7" id="cat-info__weight" required>
               </li>
               <li class="cat-info__item">
                 <label for="cat-info__years">Возраст (лет):</label>
@@ -112,7 +112,7 @@
               </p>
           </fieldset>
           <fieldset class="option__box ">
-            <legend class="selection__subtitle extra__subtitle">Дополнительно</legend>
+            <legend class="option__subtitle extra__subtitle">Дополнительно</legend>
             <ul class="extra__list">
               <li class="extra__item">
                 <input type="checkbox" name="extra" value="sugar" id="extra__sugar" checked>
@@ -133,8 +133,8 @@
             </ul>
           </fieldset>
           <div class="option__footer">
-            <button class="option__button" type="submit">Отправить заявку</button>
-            <p class="option__note">* — Обязательные поля</p>
+            <button class="option__button button" type="submit">Отправить заявку</button>
+            <p class="option__note"><sup>*</sup> — Обязательные поля</p>
           </div>
         </form>
       </div>
