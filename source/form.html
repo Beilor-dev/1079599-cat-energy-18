@@ -20,6 +20,12 @@
       <symbol viewBox="0 0 26.95 34.09" id="logo-copyright">
         <path d="M13.62,0l-.15,0L0,1.41V26.07l13.47,8,13.43-8,.05,0V1.41ZM25,12.13,13.5,5.33v-.1l-.08,0-.09-.06v.11L1.92,12.12v-9L13.47,1.93,25,3.15v9ZM13.41,6.79,24.92,13.5l-4.48,2.64-7.09-4.22v1.41l5.9,3.52-.86.5-5-3v1.42l3.82,2.27-.78.53-3-1.79V18.2l1.85,1.09-1.8,1.08L2,13.62ZM1.92,15.13l11.42,6.79v1L5.41,18.23v1.42l8,4.8,0,1.07-8-4.74V22.2l8,4.82,0,0,8.15-4.87V17L25,15V25L13.47,31.85,1.92,25Z"/>
       </symbol>
+      <symbol viewBox="0 0 17 13" id="icon-email">
+        <path d="M15.6,11.6H1.4V5.8H0V13H17V5.8H15.6ZM0,0V2.3L8.5,9.4,17,2.3V0ZM15.6,1.6,8.5,7.5,1.4,1.6V1.4H15.6Z"/>
+      </symbol>
+      <symbol viewBox="0 0 19.96 19.93" id="icon-phone">
+        <path d="M17.91,9.41H9.41v1.2h8.5l-2.1,2.1.9.9,3.1-3.1a.75.75,0,0,0,0-.9l-3.1-3.1-.9.9Z"/><path d="M8.11,19.41v-6.2a.65.65,0,0,0-.6-.6H3.11a1.22,1.22,0,0,0,1.2,1.2h2.5v5H3.11a1.79,1.79,0,0,1-1.9-1.7v-14a1.77,1.77,0,0,1,1.7-1.8h3.9v5H4.41a1.22,1.22,0,0,0-1.2,1.2h4.4a.65.65,0,0,0,.6-.6V.61a.86.86,0,0,0-.7-.6H3.11A3,3,0,0,0,0,2.91v13.9a2.89,2.89,0,0,0,2.9,3.1h4.6A.5.5,0,0,0,8.11,19.41Z"/>
+      </symbol>
     </svg>
     <header class="page-header">
       <div class="page-header__wrapper">
@@ -72,7 +78,7 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="option__project project-info">
+          <fieldset class="option__project project">
             <legend class="visually-hidden">Выбор программы</legend>
             <ul class="project__list">
               <li class="project__item">
@@ -93,22 +99,22 @@
             <legend class="option__subtitle contact_details__subtitle">Контактные данные (владельца кота)</legend>
             <ul class="contact-details__list">
               <li class="contact-details__item contact-details__item--email">
-                <label for="contact-details__email">E-mail::*</label>
-                <input type="email" name="contact-email" placeholder="kuklachev@gmail.com" id="contact-details__email">
-                <svg width="20" heigh="20"></svg>
+                <label for="contact-details__email">E-mail:<sup>*</sup></label>
+                <input type="email" name="contact-email" placeholder="kuklachev@gmail.com" id="contact-details__email" required>
+                <svg viewBox="0 0 17 13" width="17" height="13"><use xlink:href="#icon-email"></use></svg>
               </li>
               <li class="contact-details__item contact-details__item--phone">
-                <label for="contact-details__phone">Телефон:*</label>
-                <input type="email" name="contact-phone" placeholder="8 (960) 900-60-90" id="contact-details__phone">
-                <svg></svg>
+                <label for="contact-details__phone">Телефон:<sup>*</sup></label>
+                <input type="tel" name="contact-phone" placeholder="8 (960) 900-60-90" id="contact-details__phone" required>
+                <svg viewBox="0 0 19.96 19.93" width="20" height="20"><use xlink:href="#icon-phone"></use></svg>
               </li>
             </ul>
           </fieldset>
           <fieldset class="option__box reviews">
-            <legend class="option__subtitle comments__subtitle">Комментарий</legend>
-              <p class="comments__text">
-                <textarea name="comments-text" placeholder="Расскажите обо всех повадках кота" id="comments__text"></textarea>
-                <label class="visually-hidden" for="comments__text">Комментарий</label>
+            <legend class="option__subtitle reviews__subtitle">Комментарий</legend>
+              <p class="reviews__text">
+                <textarea name="reviews-text" placeholder="Расскажите обо всех повадках кота" id="reviews__text"></textarea>
+                <label class="visually-hidden" for="reviews__text">Комментарий</label>
               </p>
           </fieldset>
           <fieldset class="option__box ">
