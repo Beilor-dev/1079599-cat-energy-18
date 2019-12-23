@@ -77,3 +77,146 @@
     background-color: @bg-3;
   }
 }
+
+.sample__cost {
+  margin: 0;
+  margin-bottom: 36px;
+
+  font-size: 14px;
+  line-height: 14px;
+  font-family: @font;
+  text-align: center;
+  color: @color-2;
+  text-transform: uppercase;
+}
+
+@media (min-width: @tablet-width) {
+  .sample {
+    background-color: transparent;
+  }
+
+  .sample__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: @tablet-width;
+    padding: 0 30px 80px;
+  }
+
+  .sample__title {
+    flex-grow: 1;
+    margin-bottom: 65px;
+
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .sample__desc {
+    flex-grow: 1;
+    margin-bottom: 53px;
+
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .sample__stats {
+    justify-content: flex-start;
+    margin-bottom: 0;
+  }
+
+  .sample__value {
+    flex-grow: 0;
+    width: 162px;
+    min-height: 72px;
+    padding-top: 18px;
+
+    font-size: 30px;
+    line-height: 30px;
+
+    &:first-child {
+      margin-right: 42px;
+    }
+
+    span {
+      bottom: -14px;
+
+      width: auto;
+      padding: 0 8px;
+
+      font-size: 14px;
+      line-height: 14px;
+
+      background-color: @bg-1;
+
+      br {
+        display: none;
+      }
+    }
+  }
+
+  .sample__cost {
+    margin: 0;
+
+    font-size: 20px;
+    line-height: 20px;
+    text-align: right;
+
+    span {
+      display: block;
+      padding-top: 10px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .sample {
+    position: relative;
+
+    background-image: linear-gradient(to bottom, #ffffff 200px, #f2f2f2 200px);
+    background-size: 100%;
+  }
+
+  .sample__wrapper {
+    position: absolute;
+    top: 65px;
+    right: 0;
+    left: 0;
+    z-index: 3;
+
+    width: 435px;
+    margin: auto;
+    padding: 0;
+
+    transform: translateX(-392px);
+  }
+
+  .sample__title {
+    margin-bottom: 145px;
+  }
+
+  .sample__desc {
+    margin-bottom: 70px;
+    padding-right: 0;
+  }
+
+  .sample__stats {
+    margin-bottom: 60px;
+  }
+
+  .sample__value {
+    span {
+      bottom: -11px;
+
+      background-color: #f2f2f2;
+    }
+  }
+
+  .sample__cost {
+    span {
+      display: inline-block;
+      padding-top: 0;
+      padding-left: 60px;
+    }
+  }
+}
