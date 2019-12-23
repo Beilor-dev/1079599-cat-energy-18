@@ -87,6 +87,7 @@
 
   background-color: #68b738;
   background-image: url("../img/gift.jpg");
+  background-size: 100%;
 
   &::before {
     content: "";
@@ -99,9 +100,9 @@
     background-image: url("../img/icon-two-gift.svg");
   }
 
-  // @media (min-resolution: @retina-dppx), (min-resolution: @retina-dpi) {
-  //   background-image: url("../img/gift@2x.jpg");
-  // }
+  @media (min-resolution: @retina-dppx), (min-resolution: @retina-dpi) {
+    background-image: url("../img/gift@2x.jpg");
+  }
 }
 
 .additional-product__text {
@@ -191,15 +192,14 @@
       padding: 65px 125px 75px 91px;
 
       background-image: url("../img/gift-tablet.jpg");
-      background-size: 100%;
 
       &::before {
         margin: 0;
       }
 
-      // @media (min-resolution: @retina-dppx), (min-resolution: @retina-dpi) {
-      //   background-image: url("../img/gift-tablet@2x.jpg");
-      // }
+      @media (min-resolution: @retina-dppx), (min-resolution: @retina-dpi) {
+        background-image: url("../img/gift-tablet@2x.jpg");
+      }
     }
 
     .additional-product__text {
@@ -271,6 +271,8 @@
   .additional-product__promo {
     width: 245px;
     margin-left: 80px;
+
+    background-size: cover;
   }
 
   .additional-product__text {
