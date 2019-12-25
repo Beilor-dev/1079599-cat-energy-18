@@ -1,14 +1,11 @@
 // Мобильное меню
 
-var mainNav = document.querySelector('.main-nav');
-var mainNavSwitch = mainNav.querySelector('.main-nav__switch');
+var closeButton = document.getElementsByClassName('main-nav__switch')[0];
+var navMenu = document.getElementsByClassName('main-nav__list')[0];
 
+closeButton.classList.add('main-nav__switch_state-shown');
+navMenu.classList.add('main-nav__list_state-hide');
 
-mainNavSwitch.addEventListener('click', function () {
-
-  if (mainNav.classList.contains('main-nav--close')) {
-    mainNav.classList.remove('main-nav--close');
-  } else {
-    mainNav.classList.add('main-nav--close');
-  }
-})
+closeButton.addEventListener('click', function() {
+  navMenu.classList.toggle('main-nav__list_state-hide');
+});
