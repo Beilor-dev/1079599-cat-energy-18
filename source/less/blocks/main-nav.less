@@ -1,5 +1,13 @@
 .main-nav {
   position: relative;
+
+  &__switch {
+    display: none;
+
+    &_state-shown {
+      display: block;
+    }
+  }
 }
 
 .main-nav__list {
@@ -51,7 +59,11 @@
   }
 
   .main-nav--close .main-nav__list {
-    display: none;
+    display: block;
+
+    &_state-hide {
+      display: none;
+    }
   }
 }
 
