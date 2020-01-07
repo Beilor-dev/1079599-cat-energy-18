@@ -3,15 +3,17 @@
   text-align: center;
   color: @color-3;
 
-  background-image: url("../img/bg-mobile.jpg"),
-    linear-gradient(to bottom, #64a83b 305px, @bg-1 305px);
+  background-image:
+  url(../img/bg-mobile.jpg),
+  linear-gradient(to bottom, #64a83b 305px, @bg-1 305px);
   background-repeat: no-repeat;
   background-position: top;
   background-size: 320px 305px, 100%;
 
   @media (min-resolution: @retina-dppx), (min-resolution: @retina-dpi) {
-    background-image: url("../img/bg-mobile@2x.jpg"),
-      linear-gradient(to bottom, #64a83b 305px, @bg-1 305px);
+    background-image:
+    url(../img/bg-mobile@2x.jpg),
+    linear-gradient(to bottom, #64a83b 305px, @bg-1 305px);
   }
 }
 
@@ -45,8 +47,6 @@
   width: 100%;
   margin: 0 auto;
 
-  color: @color-3;
-
   background-color: @bg-2;
 
   &:hover {
@@ -58,7 +58,9 @@
   }
 }
 
+
 @media (min-width: @tablet-width) {
+
   .reclame {
     text-align: left;
     color: @color-2;
@@ -119,20 +121,22 @@
   }
 }
 
+
 @media (min-width: @desktop-width) {
+
   .reclame {
     min-height: 696px;
     margin-bottom: 80px;
     padding: 1px;
 
-    background-image: url("../img/bg-desktop.jpg"),
-      linear-gradient(to right, @bg-1 50%, #64a83b 50%);
+    background-image: url(../img/bg-desktop.jpg),
+    linear-gradient(to right, @bg-1 50%, #64a83b 50%);
     background-position: top right;
     background-size: 50% auto, 100%;
 
     @media (min-resolution: @retina-dppx), (min-resolution: @retina-dpi) {
-      background-image: url("../img/bg-desktop@2x.jpg"),
-        linear-gradient(to right, @bg-1 50%, #64a83b 50%);
+      background-image: url(../img/bg-desktop@2x.jpg),
+      linear-gradient(to right, @bg-1 50%, #64a83b 50%);
     }
   }
 
