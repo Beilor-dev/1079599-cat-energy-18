@@ -47,6 +47,7 @@
 .project__item label {
   display: flex;
   align-items: center;
+  width: 100%;
 
   color: @color-4;
 
@@ -65,6 +66,16 @@
     box-shadow: 0 0 0 1px #cdcdcd;
   }
 }
+
+.project__item label {
+  &:active {
+    color: rgba(34, 34, 34, 0.3);
+  }
+  // &:hover {
+  //   color:  #222222;
+  // }
+}
+
 
 .project__item input:checked + label::before {
   background-color: #68b738;

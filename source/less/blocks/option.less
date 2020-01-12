@@ -200,7 +200,6 @@
   .option__note {
     font-size: 16px;
     line-height: 16px;
-
     // sup {
     //   top: -1px;
     //   font-size: 1em;
@@ -243,6 +242,7 @@
   }
 
   .option__box {
+    display: flex;
     flex-grow: 1;
     width: 100%;
     margin-bottom: 68px;
@@ -275,5 +275,54 @@
     margin-left: 2px;
 
     font-size: 16px;
+  }
+}
+
+@media all and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .option__button {
+    line-height: 50px;
+  }
+
+  .contact-details__item--email svg {
+    top: 20px;
+    right: 12px;
+  }
+
+  .contact-details__item--phone svg {
+    top: 16px;
+    right: 17px;
+  }
+}
+
+@-moz-document url-prefix() {
+  .option__box::before {
+    left: -100vw;
+    top: -44px;
+    width: 200vw;
+    z-index: -1;
+  }
+}
+
+
+@media (min-width: @tablet-width) {
+  @-moz-document url-prefix() {
+    .option__box::before {
+      left: -107vw;
+      top: -90px;
+      width: 200vw;
+      z-index: -1;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  @-moz-document url-prefix() {
+    .option__box::before {
+      left: -6vw;
+      top: -90px;
+      width: 200vw;
+      z-index: -1;
+      margin-right: -8px;
+    }
   }
 }

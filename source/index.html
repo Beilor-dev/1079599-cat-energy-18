@@ -8,8 +8,7 @@
     <link rel="preload" href="fonts/oswaldregular.woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="fonts/oswaldregular.woff" as="font" crossorigin="anonymous">
     <!-- <link rel="stylesheet" href="css/style.css"> -->
-    <link rel="stylesheet" href="css/style.css">
-
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
     <svg style="display: none">
@@ -93,68 +92,17 @@
         </div>
       </section>
       <section class="sample">
-
-        <div class="container container--sample">
+        <div class="container-sample">
         <div class="sample__wrapper">
           <h2 class="sample__title">Живой пример</h2>
           <p class="sample__desc">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день</p>
-          <div class="sample__options">
-          <dl class="sample__list">
-            <div class="sample__list--style">
-              <dt class="sample__list-value">5 кг</dt>
-              <dd class="sample__list-info">снижение веса</dd>
-            </div>
-            <div class="sample__list--style">
-              <dt class="sample__list-value">60 дней</dt>
-              <dd class="sample__list-info">затрачено времени</dd>
-            </div>
-          </dl>
-          <p class="sample__total">Затраты на питание:
-            <span class="sample__total-cost">15 000 руб.</span>
-          </p>
-        </div>
-          <!-- <ul class="sample__stats">
-            <li class="sample__value">5 кг <span>снижение <br>веса</span></li>
-            <li class="sample__value">60 дней <span>затрачено <br>времени</span></li>
+          <ul class="sample__stats">
+            <li class="sample__value">5 кг <span class="sample__spec--one">снижение <br>веса</span></li>
+            <li class="sample__value">60 дней <span class="sample__spec--two">затрачено <br>времени</span></li>
           </ul>
-          <p class="sample__cost">Затраты на питание: <span>15 000 руб.</span></p> -->
-       </div>
-       <div class="sample__photo action-slider">
-        <input class="action-slider__toggle action-slider__toggle--before visually-hidden" type="radio" id="toggle-before" name="toggle-before">
-        <input class="action-slider__toggle action-slider__toggle--after visually-hidden" type="radio" id="toggle-after" name="toggle-after">
-        <div class="action-slider__container">
-          <div class="action-slider__photos">
-            <div class="action-slider__photo action-slider__photo--before">
-              <picture>
-                <source type="image/webp" media="(min-width: 1300px)" srcset="img/cat-slider-before-desktop.webp, img/cat-slider-before-desktop@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 768px)" srcset="img/cat-slider-before-tablet.webp, img/cat-slider-before-tablet@2x.webp 2x">
-                <source media="(min-width: 768px)" srcset="img/cat-slider-before-tablet.png, img/cat-slider-before-tablet@2x.png 2x">
-                <source type="image/webp" srcset="img/cat-slider-before.webp, img/cat-slider-before@2x.webp 2x">
-                <img class="action-slider__photo-item action-slider__photo-item--before" src="img/cat-slider-before.png" srcset="img/cat-slider-before-tablet@2x.png 2x" width="311" height="232" alt="Изображение кота: До">
-              </picture>
-            </div>
-            <div class="action-slider__photo action-slider__photo--after  action-slider__photo-item--closed">
-              <picture>
-                <source type="image/webp" media="(min-width: 1300px)" srcset="img/cat-slider-after-desktop.webp, img/cat-slider-after-desktop@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 768px)" srcset="img/cat-slider-after-tablet.webp, img/cat-slider-after-tablet@2x.webp 2x">
-                <source type="image/webp" srcset="img/cat-slider-after.webp, img/cat-slider-after@2x.webp 2x">
-                <source media="(min-width: 768px)" srcset="img/cat-slider-after-tablet.png, img/cat-slider-after-tablet@2x.png 2x">
-                <img class="action-slider__photo-item action-slider__photo-item--after" src="img/cat-slider-after.png" srcset="img/cat-slider-after-tablet@2x.png 2x" width="251" height="240" alt="Изображение кота: После">
-              </picture>
-            </div>
-          </div>
-          <div class="action-slider__buttons-block">
-            <label class="action-slider__label action-slider__label--before" for="toggle-before">Было</label>
-            <div class="action-slider__control">
-              <div class="action-slider__range"></div>
-              <button class="action-slider__button" type="button"></button>
-            </div>
-            <label class="action-slider__label action-slider__label--after" for="toggle-after">Стало</label>
-          </div>
+          <p class="sample__cost">Затраты на питание: <span>15 000 руб.</span></p>
         </div>
-      </div>
-
-        <!-- <div class="sample__action-slider action-slider">
+        <div class="sample__action-slider action-slider">
           <div class="action-slider__wrapper">
             <ul class="action-slider__list">
               <li class="action-slider__item action-slider__item--before">
@@ -185,7 +133,7 @@
             </div>
           </div>
         </div>
-        </div> -->
+        </div>
       </section>
     </main>
     <footer class="page-footer">
