@@ -42,6 +42,9 @@
   &:focus + label::before {
     box-shadow: 0 0 0 1px #bababa;
   }
+  &:active {
+    color: rgba(34, 34, 34, 0.3);
+  }
 }
 
 .project__item label {
@@ -65,16 +68,19 @@
 
     box-shadow: 0 0 0 1px #cdcdcd;
   }
+
+  &::after {
+    content: none;
+
+    position: absolute;
+    // background-color: #ffffff;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
-.project__item label {
-  &:active {
-    color: rgba(34, 34, 34, 0.3);
-  }
-  // &:hover {
-  //   color:  #222222;
-  // }
-}
 
 
 .project__item input:checked + label::before {
