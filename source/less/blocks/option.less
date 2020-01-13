@@ -213,7 +213,7 @@
     padding: 0 @desktop-padding 82px;
   }
 
-  .option__head {
+  .option__header {
     padding: 0;
     margin-bottom: 65px;
   }
@@ -241,21 +241,17 @@
     margin-bottom: 68px;
   }
 
+  .option__programm {
+    margin-bottom: 68px;
+  }
+
   .option__box {
-    display: flex;
     flex-grow: 1;
     width: 100%;
     margin-bottom: 68px;
 
     &:last-of-type {
       margin-bottom: 61px;
-    }
-
-     &::before {
-      left: -110px;
-      top: 22px;
-
-      max-width: 1440px;
     }
   }
 
@@ -294,7 +290,7 @@
   }
 }
 
-@-moz-document url-prefix() {
+@-moz-document url-prefix("") {
   .option__box::before {
     left: -100vw;
     top: -44px;
@@ -305,7 +301,7 @@
 
 
 @media (min-width: @tablet-width) {
-  @-moz-document url-prefix() {
+  @-moz-document url-prefix("") {
     .option__box::before {
       left: -107vw;
       top: -90px;
@@ -316,7 +312,7 @@
 }
 
 @media (min-width: @desktop-width) {
-  @-moz-document url-prefix() {
+  @-moz-document url-prefix("") {
     .option__box::before {
       left: -6vw;
       top: -90px;
