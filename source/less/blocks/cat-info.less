@@ -58,15 +58,18 @@
   }
 
   &:hover {
-    border-color: #cdcdcd;
+    border-color: #cfcfcf;
+  }
+
+  &:invalid {
+    border: 2px solid #ff8282;
   }
 
   &:focus {
-    border: 2px solid #444444;
-    outline: none;
+    border-color: #444444;
+    outline: 1px solid #444444;
   }
 }
-
 
 @media (min-width: @tablet-width) {
   .cat-info__item {
