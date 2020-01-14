@@ -45,7 +45,7 @@
 
   font-size: 16px;
   line-height: 20px;
-  color: #000000;
+  color: @color-1;
 
   background-color: #f2f2f2;
 
@@ -53,9 +53,9 @@
     background-color: #ebebeb;
   }
 
-  // &:active {
-  //   color: rgba(#000000, 0.3);
-  // }
+  &:active {
+    color: rgba(68, 68, 68, 0.3);
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -89,5 +89,11 @@
 
   .more-product__button {
     min-height: 40px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .more-product__button {
+    line-height: 40px;
   }
 }

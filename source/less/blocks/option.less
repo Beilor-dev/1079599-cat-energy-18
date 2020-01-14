@@ -108,7 +108,8 @@
 }
 
 .option__note {
-  margin: -3px;
+  margin: 1px;
+  // margin-top: -8px;
 
   font-size: 14px;
   line-height: 16px;
@@ -199,21 +200,20 @@
   .option__note {
     font-size: 16px;
     line-height: 16px;
-
-    sup {
-      top: -1px;
-      font-size: 1em;
-    }
+    // sup {
+    //   top: -1px;
+    //   font-size: 1em;
+    // }
   }
 }
 
 @media (min-width: @desktop-width) {
   .option__wrapper {
-    width: @desktop-width;
+    width: 1440px;
     padding: 0 @desktop-padding 82px;
   }
 
-  .option__head {
+  .option__header {
     padding: 0;
     margin-bottom: 65px;
   }
@@ -241,13 +241,17 @@
     margin-bottom: 68px;
   }
 
+  .option__programm {
+    margin-bottom: 68px;
+  }
+
   .option__box {
     flex-grow: 1;
     width: 100%;
     margin-bottom: 68px;
 
     &:last-of-type {
-      margin-bottom: 61px;
+      margin-bottom: 30px;
     }
   }
 
@@ -260,5 +264,61 @@
   .option__button {
     width: 570px;
     margin-right: 80px;
+  }
+
+  .option__note {
+    margin-top: -8px;
+    margin-left: 2px;
+
+    font-size: 16px;
+  }
+}
+
+@media all and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .option__button {
+    line-height: 50px;
+  }
+
+  .contact-details__item--email svg {
+    top: 20px;
+    right: 12px;
+  }
+
+  .contact-details__item--phone svg {
+    top: 16px;
+    right: 17px;
+  }
+}
+
+@-moz-document url-prefix("") {
+  .option__box::before {
+    left: -100vw;
+    top: -44px;
+    width: 200vw;
+    z-index: -1;
+  }
+}
+
+
+@media (min-width: @tablet-width) {
+  @-moz-document url-prefix("") {
+    .option__box::before {
+      left: -107vw;
+      top: -90px;
+      width: 200vw;
+      z-index: -1;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  @-moz-document url-prefix("") {
+    .option__box::before {
+      left: -6vw;
+      top: -90px;
+      width: 200vw;
+      z-index: -1;
+      margin-right: -8px;
+    }
   }
 }

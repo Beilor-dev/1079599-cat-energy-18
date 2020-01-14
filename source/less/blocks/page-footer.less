@@ -25,6 +25,7 @@
 }
 
 .page-footer__social {
+  flex-wrap: wrap;
   margin-bottom: 22px;
 }
 
@@ -43,8 +44,8 @@
   }
 
   .page-footer__social {
-    margin-bottom: 7px;
-    margin-left: -20px;
+    margin-bottom: 9px;
+    margin-left: 13px;
   }
 
   .page-footer__copyright {
@@ -54,10 +55,20 @@
 
 @media (min-width: @desktop-width) {
   .page-footer__wrapper {
-    padding: 5px @desktop-padding 0;
+    width: 1220px;
+    padding: 5px 0 0;
   }
 
   .page-footer__social {
     margin-left: -14px;
+    margin-right: -26px;
+    margin-bottom: 9px;
+  }
+}
+
+
+@media (min-width: 1300px) and (min-width: 768px) screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .page-footer__wrapper {
+    padding-top: 61px;
   }
 }

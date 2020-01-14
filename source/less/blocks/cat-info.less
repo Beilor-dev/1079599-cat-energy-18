@@ -28,11 +28,21 @@
 .cat-info__item label {
   margin-right: 14px;
 
-  sup {
-    top: 0.1em;
-    right: 0;
-    font-size: 1em;
-  }
+  color: @color-4;
+
+  // sup {
+  //   position: relative;
+  //   top: 4px;
+  //   right: 0;
+  //   font-size: 1em;
+  // }
+}
+
+.cat-info__point {
+  position: relative;
+  top: 4px;
+  right: 0;
+  font-size: 1em;
 }
 
 .cat-info__item input {
@@ -44,7 +54,7 @@
 
   font-family: @font;
   font-size: 16px;
-  color: #444444;
+  color: @color-1;
   text-transform: inherit;
 
   border: 1px solid #e6e6e6;
@@ -55,15 +65,18 @@
   }
 
   &:hover {
-    border-color: #cdcdcd;
+    border-color: #cfcfcf;
+  }
+
+  &:invalid {
+    border: 2px solid #ff8282;
   }
 
   &:focus {
-    border: 2px solid #444444;
-    outline: none;
+    border-color: #444444;
+    outline: 1px solid #444444;
   }
 }
-
 
 @media (min-width: @tablet-width) {
   .cat-info__item {
@@ -74,6 +87,7 @@
   }
 
   .cat-info__item label {
+    margin-bottom: 5px;
     margin-right: 18px;
 
     .cat-info__item label sup {
@@ -85,10 +99,11 @@
 
   .cat-info__item input {
     height: 52px;
-    padding: 10px 20px;
+    padding: 10px 19px;
+
+    font-size: 20px;
   }
 }
-
 
 @media (min-width: @desktop-width) {
   .cat-info {

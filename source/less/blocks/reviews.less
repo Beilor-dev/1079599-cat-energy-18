@@ -29,13 +29,9 @@
     color: inherit;
   }
 
-  &:hover {
-    border-color: #cdcdcd;
-  }
-
   &:focus {
-    border: 2px solid #444444;
-    outline: none;
+    border-color: #444444;
+    outline: 1px solid #444444;
   }
 }
 
@@ -56,5 +52,11 @@
     font-style: normal;
     line-height: 1;
     letter-spacing: normal;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .reviews__text textarea {
+    width: 1220px;
   }
 }

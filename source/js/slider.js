@@ -1,5 +1,3 @@
-// Слайдер
-
 var effectSlider = document.querySelector('.action-slider');
 var effectSliderItemBefore = effectSlider.querySelector('.action-slider__item--before');
 var effectSliderItemAfter = effectSlider.querySelector('.action-slider__item--after');
