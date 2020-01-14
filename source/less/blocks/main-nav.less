@@ -81,6 +81,8 @@
 
   .main-nav__list {
     display: flex;
+    max-width: 768px;
+    flex-wrap: wrap;
   }
 
   .main-nav__item {
@@ -118,6 +120,14 @@
   .main-nav {
     top: 2px;
     left: 3px;
+  }
+
+  .main-nav__wrapper {
+    max-width: 520px;
+    display: flex;
+    flex-wrap: wrap;
+    z-index: 1;
+    min-height: 20px;
   }
 
   .main-nav__link {
