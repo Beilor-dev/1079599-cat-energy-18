@@ -7,7 +7,7 @@
     <title>HTML Academy: Кэт энерджи</title>
     <link rel="preload" href="fonts/oswaldregular.woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="fonts/oswaldregular.woff" as="font" crossorigin="anonymous">
-    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
@@ -94,15 +94,27 @@
         </div>
       </section>
       <section class="sample">
-        <div class="sample__wrapper">
-          <h2 class="sample__title">Живой пример</h2>
-          <p class="sample__desc">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день</p>
-          <ul class="sample__stats">
-            <li class="sample__value">5 кг <span class="sample__spec--one">снижение <br>веса</span></li>
-            <li class="sample__value">60 дней <span class="sample__spec--two">затрачено <br>времени</span></li>
-          </ul>
-          <p class="sample__cost">Затраты на питание: <span>15 000 руб.</span></p>
-        </div>
+        <!-- <div class="sample__wrapper"> -->
+          <div class="sample__header">
+            <div class="sample__container sample__container--left">
+              <h2 class="sample__header-title">Живой пример</h2>
+            </div>
+          </div>
+          <div class="sample__content">
+            <div class="sample__container">
+              <div class="sample__wrapper-left">
+                <div class="sample__wrapper-left-container">
+                  <p class="sample__desc">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день</p>
+                  <ul class="sample__stats">
+                    <li class="sample__value">5 кг <span class="sample__spec--one">снижение <br>веса</span></li>
+                    <li class="sample__value">60 дней <span class="sample__spec--two">затрачено <br>времени</span></li>
+                  </ul>
+                  <p class="sample__cost">Затраты на питание: <span>15 000 руб.</span></p>
+                </div>
+              </div>
+           
+        <div class="sample__wrapper-right">
+          <div class="sample__wrapper-right-container">
         <div class="sample__action-slider action-slider">
           <div class="action-slider__wrapper">
             <ul class="action-slider__list">
@@ -134,7 +146,15 @@
             </div>
           </div>
         </div>
+        </div>
+        </div>
+
+          </div>
+         </div>
+        </div>
+        <!-- </div> -->
       </section>
+
     </main>
     <footer class="page-footer">
       <section class="page-footer__contacts">
