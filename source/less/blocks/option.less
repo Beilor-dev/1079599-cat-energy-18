@@ -208,9 +208,14 @@
 }
 
 @media (min-width: @desktop-width) {
+  .option-container {
+    width: 1220px;
+    margin: 0 auto;
+  }
+
   .option__wrapper {
-    width: 1440px;
-    padding: 0 @desktop-padding 82px;
+    width: 1220px;
+    padding-left: 0;
   }
 
   .option__header {
@@ -230,6 +235,7 @@
   .option__form {
     display: flex;
     flex-wrap: wrap;
+    width: 1220px;
   }
 
   .option__cat-info {
@@ -259,6 +265,7 @@
     display: flex;
     align-items: center;
     padding: 0;
+    margin-bottom: 8px;
   }
 
   .option__button {
