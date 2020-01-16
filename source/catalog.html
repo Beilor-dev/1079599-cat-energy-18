@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>HTML Academy: Кэт энерджи каталог</title>
-    <link rel="preload" href="fonts/oswaldregular.woff2" as="font" crossorigin="anonymous">
-    <link rel="preload" href="fonts/oswaldregular.woff" as="font" crossorigin="anonymous">
+    <link href="fonts/oswaldmedium.woff" rel="preload" as="font">
+    <link href="fonts/oswaldmedium.woff2" rel="preload" as="font">
+    <link href="fonts/oswaldregular.woff" rel="preload" as="font">
+    <link href="fonts/oswaldregular.woff2" rel="preload" as="font">
     <!-- <link rel="stylesheet" href="css/style.css"> -->
     <link rel="stylesheet" href="css/style.min.css">
   </head>
@@ -57,8 +59,8 @@
         <h1 class="catalog__title">Каталог продукции</h1>
         <div class="catalog__list">
           <div class="catalog-product product">
-            <div class="catalog-products__container">
-              <a href="#" class="link__wrapper">
+            <div class="catalog-products-container">
+              <a href="#" class="link-wrapper">
               <picture class="product__image">
                 <source type="image/webp" media="(min-width: 1300px)" srcset="img/chicken500-desktop.webp, img/chicken500-desktop@2x.webp 2x">
                 <source type="image/webp" media="(min-width: 768px)" srcset="img/chicken500-tablet.webp, img/chicken500-tablet@2x.webp 2x">
@@ -67,7 +69,7 @@
                 <img src="img/chicken500.jpg" srcset="img/chicken500@2x.jpg 2x" width="140" height="144" alt="Cat Energy Pro с курицей (500 гр)">
               </picture>
               </a>
-              <div class="catalog-products__description">
+              <div class="catalog-products-description">
                 <a href="#" ><h3 class="product__title">Cat Energy Pro 500 г</h3></a>
                 <table class="product__desc">
                   <tbody>
@@ -90,7 +92,7 @@
             <a class="button product__button" href="#">Заказать</a>
           </div>
           <div class="catalog-product product">
-            <div class="catalog-products__container">
+            <div class="catalog-products-container">
               <a href="#">
               <picture class="product__image">
                 <source type="image/webp" media="(min-width: 1300px)" srcset="img/chicken1000-desktop.webp, img/chicken1000-desktop@2x.webp 2x">
@@ -100,7 +102,7 @@
                 <img src="img/chicken1000.jpg" srcset="img/chicken1000@2x.jpg 2x" width="140" height="144" alt="Cat Energy Pro с курицей (1000 гр)">
               </picture>
               </a>
-            <div class="catalog-products__description">
+            <div class="catalog-products-description">
             <a href="#"><h3 class="product__title">Cat Energy Pro 1000 г</h3></a>
             <table class="product__desc">
               <tbody>
@@ -123,8 +125,8 @@
             <a class="button product__button" href="#">Заказать</a>
           </div>
           <div class="catalog-product product">
-            <div class="catalog-products__container">
-            <a href="#" class="link__wrapper">
+            <div class="catalog-products-container">
+            <a href="#" class="link-wrapper">
             <picture class="product__image">
               <source type="image/webp" media="(min-width: 1300px)" srcset="img/fish500-desktop.webp, img/fish500-desktop@2x.webp 2x">
               <source type="image/webp" media="(min-width: 768px)" srcset="img/fish500-tablet.webp, img/fish500-tablet@2x.webp 2x">
@@ -133,7 +135,7 @@
               <img src="img/fish500.jpg" srcset="img/fish500@2x.jpg 2x" width="140" height="144" alt="Cat Energy Pro с рыбой (500 гр)">
             </picture>
             </a>
-            <div class="catalog-products__description">
+            <div class="catalog-products-description">
             <a href="#"><h3 class="product__title">Cat Energy Pro 500 г</h3></a>
             <table class="product__desc">
               <tbody>
@@ -156,7 +158,7 @@
             <a class="button product__button" href="#">Заказать</a>
           </div>
           <div class="catalog-product product">
-            <div class="catalog-products__container">
+            <div class="catalog-products-container">
             <a href="#">
             <picture class="product__image">
               <source type="image/webp" media="(min-width: 1300px)" srcset="img/fish1000-desktop.webp, img/fish1000-desktop@2x.webp 2x">
@@ -166,7 +168,7 @@
               <img src="img/fish1000.jpg" srcset="img/fish1000@2x.jpg 2x" width="140" height="144" alt="Cat Energy Pro с рыбой (1000 гр)">
             </picture>
             </a>
-            <div class="catalog-products__description">
+            <div class="catalog-products-description">
             <a href="#"><h3 class="product__title">Cat Energy Pro 1000 г</h3></a>
             <table class="product__desc">
               <tbody>
@@ -189,8 +191,8 @@
             <a class="button product__button" href="#">Заказать</a>
           </div>
           <div class="catalog-product product">
-            <div class="catalog-products__container">
-            <a href="#" class="link__wrapper">
+            <div class="catalog-products-container">
+            <a href="#" class="link-wrapper">
             <picture class="product__image">
               <source type="image/webp" media="(min-width: 1300px)" srcset="img/buckwheat500-desktop.webp, img/buckwheat500-desktop@2x.webp 2x">
               <source type="image/webp" media="(min-width: 768px)" srcset="img/buckwheat500-tablet.webp, img/buckwheat500-tablet@2x.webp 2x">
@@ -199,7 +201,7 @@
               <img src="img/buckwheat500.jpg" srcset="img/buckwheat500@2x.jpg 2x" width="140" height="144" alt="Cat Energy Pro с гречкой (500 гр)">
             </picture>
             </a>
-            <div class="catalog-products__description">
+            <div class="catalog-products-description">
             <a href="#"><h3 class="product__title">Cat Energy Slim 500 г</h3></a>
             <table class="product__desc">
               <tbody>
@@ -222,7 +224,7 @@
             <a class="button product__button" href="#">Заказать</a>
           </div>
           <div class="catalog-product product">
-            <div class="catalog-products__container">
+            <div class="catalog-products-container">
             <a href="#">
             <picture class="product__image">
               <source type="image/webp" media="(min-width: 1300px)" srcset="img/buckwheat1000-desktop.webp, img/buckwheat1000-desktop@2x.webp 2x">
@@ -233,7 +235,7 @@
               <img src="img/buckwheat1000.jpg" srcset="img/buckwheat1000@2x.jpg 2x" width="140" height="144" alt="Cat Energy Pro с гречкой (1000 гр)">
             </picture>
             </a>
-            <div class="catalog-products__description">
+            <div class="catalog-products-description">
             <a href="#"><h3 class="product__title">Cat Energy Slim 1000 г</h3></a>
             <table class="product__desc">
               <tbody>
@@ -256,8 +258,8 @@
             <a class="button product__button" href="#">Заказать</a>
           </div>
           <div class="catalog-product product">
-            <div class="catalog-products__container">
-            <a href="#" class="link__wrapper">
+            <div class="catalog-products-container">
+            <a href="#" class="link-wrapper">
             <picture class="product__image">
               <source type="image/webp" media="(min-width: 1300px)" srcset="img/rice500-desktop.webp, img/rice500-desktop@2x.webp 2x">
               <source type="image/webp" media="(min-width: 768px)" srcset="img/rice500-tablet.webp, img/rice500-tablet@2x.webp 2x">
@@ -266,7 +268,7 @@
               <img src="img/rice500.jpg" srcset="img/rice500@2x.jpg 2x" width="140" height="144" alt="Cat Energy Pro с рисом (500 гр)">
             </picture>
             </a>
-            <div class="catalog-products__description">
+            <div class="catalog-products-description">
             <a href="#"><h3 class="product__title">Cat Energy Slim 500 г</h3></a>
             <table class="product__desc">
               <tbody>
@@ -340,12 +342,12 @@
     <footer class="page-footer">
       <section class="page-footer__contacts">
         <h2 class="visually-hidden">Контакты</h2>
-        <div class="contacts__wrapper">
-          <div class="contacts__box">
-            <b class="contacts__invite">Приглашаем <br>к сотрудничеству дилеров!</b>
-            <p class="contacts__adds">ул. Большая Конюшенная, д. 19/8 <span>Санкт-Петербург</span></p>
+        <div class="contacts-wrapper">
+          <div class="contacts-box">
+            <b class="contacts-invite">Приглашаем <br>к сотрудничеству дилеров!</b>
+            <p class="contacts-adds">ул. Большая Конюшенная, д. 19/8 <span>Санкт-Петербург</span></p>
           </div>
-          <iframe class="contacts__map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1998.6037861610246!2d30.3208587!3d59.9387165!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1557312282425!5m2!1sru!2sru" width="100" height="362" allowfullscreen=""></iframe>
+          <iframe class="contacts-map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1998.6037861610246!2d30.3208587!3d59.9387165!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1557312282425!5m2!1sru!2sru" width="100" height="362" allowfullscreen=""></iframe>
         </div>
       </section>
       <div class="page-footer__wrapper">

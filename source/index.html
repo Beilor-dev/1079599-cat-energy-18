@@ -5,9 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>HTML Academy: Кэт энерджи</title>
-    <link rel="preload" href="fonts/oswaldregular.woff2" as="font" crossorigin="anonymous">
-    <link rel="preload" href="fonts/oswaldregular.woff" as="font" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
+    <link href="fonts/oswaldmedium.woff" rel="preload" as="font">
+    <link href="fonts/oswaldmedium.woff2" rel="preload" as="font">
+    <link href="fonts/oswaldregular.woff" rel="preload" as="font">
+    <link href="fonts/oswaldregular.woff2" rel="preload" as="font">
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
@@ -26,6 +28,7 @@
       </symbol>
     </svg>
     <header class="page-header">
+      <div class="container-width container-width-tablet container-width-mobile">
       <div class="page-header__wrapper">
         <a href="index.html" class="page-header__logo logo">
           <picture class="logo__box">
@@ -34,7 +37,7 @@
             <img class="logo__image" src="img/logo-mobile.svg" width="33" height="38" alt="Логотип Cat Energy">
           </picture>
         </a>
-        <div class="main-nav__wrapper">
+        <div class="page-nav">
         <nav class="page-header__main-nav main-nav main-nav--close">
           <button class="main-nav__switch" type="button">
             <span class="visually-hidden">Открыть/зыкрыть меню</span>
@@ -52,6 +55,7 @@
           </ul>
         </nav>
         </div>
+      </div>
       </div>
     </header>
     <main>
@@ -94,27 +98,15 @@
         </div>
       </section>
       <section class="sample">
-        <!-- <div class="sample__wrapper"> -->
-          <div class="sample__header">
-            <div class="sample__container sample__container--left">
-              <h2 class="sample__header-title">Живой пример</h2>
-            </div>
-          </div>
-          <div class="sample__content">
-            <div class="sample__container">
-              <div class="sample__wrapper-left">
-                <div class="sample__wrapper-left-container">
-                  <p class="sample__desc">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день</p>
-                  <ul class="sample__stats">
-                    <li class="sample__value">5 кг <span class="sample__spec--one">снижение <br>веса</span></li>
-                    <li class="sample__value">60 дней <span class="sample__spec--two">затрачено <br>времени</span></li>
-                  </ul>
-                  <p class="sample__cost">Затраты на питание: <span>15 000 руб.</span></p>
-                </div>
-              </div>
-           
-        <div class="sample__wrapper-right">
-          <div class="sample__wrapper-right-container">
+        <div class="sample__wrapper">
+          <h2 class="sample__title">Живой пример</h2>
+          <p class="sample__desc">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день</p>
+          <ul class="sample__stats">
+            <li class="sample__value">5 кг <span class="sample__value_one">снижение <br>веса</span></li>
+            <li class="sample__value">60 дней <span class="sample__value_two">затрачено <br>времени</span></li>
+          </ul>
+          <p class="sample__cost">Затраты на питание: <span>15 000 руб.</span></p>
+        </div>
         <div class="sample__action-slider action-slider">
           <div class="action-slider__wrapper">
             <ul class="action-slider__list">
@@ -138,33 +130,25 @@
               </li>
             </ul>
             <div class="action-slider__control">
-              <button class="action-slider__label action-slider__label--before">Было</button>
+              <div class="action-slider__label action-slider__label--before">Было</div>
               <p class="action-slider__spacing">
                 <button class="action-slider__button" type="button"><span class="visually-hidden">Ползунок</span></button>
               </p>
-              <button class="action-slider__label action-slider__label--after">Стало</button>
+              <div class="action-slider__label action-slider__label--after">Стало</div>
             </div>
           </div>
         </div>
-        </div>
-        </div>
-
-          </div>
-         </div>
-        </div>
-        <!-- </div> -->
       </section>
-
     </main>
     <footer class="page-footer">
       <section class="page-footer__contacts">
         <h2 class="visually-hidden">Контакты</h2>
-        <div class="contacts__wrapper">
-          <div class="contacts__box">
-            <b class="contacts__invite">Приглашаем <br>к сотрудничеству дилеров!</b>
-            <p class="contacts__adds">ул. Большая Конюшенная, д. 19/8 <span>Санкт-Петербург</span></p>
+        <div class="contacts-wrapper">
+          <div class="contacts-box">
+            <b class="contacts-invite">Приглашаем <br>к сотрудничеству дилеров!</b>
+            <p class="contacts-adds">ул. Большая Конюшенная, д. 19/8 <span>Санкт-Петербург</span></p>
           </div>
-          <iframe class="contacts__map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1998.6037861610246!2d30.3208587!3d59.9387165!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1557312282425!5m2!1sru!2sru" width="100" height="362" allowfullscreen=""></iframe>
+          <iframe class="contacts-map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1998.6037861610246!2d30.3208587!3d59.9387165!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1557312282425!5m2!1sru!2sru" width="100" height="362" allowfullscreen=""></iframe>
         </div>
       </section>
       <div class="page-footer__wrapper">

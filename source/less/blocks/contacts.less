@@ -1,4 +1,4 @@
-.contacts__map {
+.contacts-map {
   width: 100%;
   height: 362px;
 
@@ -15,7 +15,7 @@
   }
 }
 
-.contacts__wrapper {
+.contacts-wrapper {
   box-sizing: border-box;
   width: 100%;
   height: 477px;
@@ -23,7 +23,7 @@
   margin-right: auto;
 }
 
-.contacts__box {
+.contacts-box {
   display: flex;
   justify-content: space-between;
   box-sizing: border-box;
@@ -33,11 +33,11 @@
   background-color: @bg-1;
 }
 
-.inner-page .contacts__box {
+.inner-page .contacts-box {
   background-color: #f2f2f2;
 }
 
-.contacts__invite {
+.contacts-invite {
   width: 140px;
 
   font-weight: 400;
@@ -48,7 +48,7 @@
   text-transform: uppercase;
 }
 
-.contacts__adds {
+.contacts-adds {
   width: 140px;
   margin: 0;
 
@@ -63,7 +63,7 @@
 // }
 
 @media (min-width: @tablet-width) {
-  .contacts__map {
+  .contacts-map {
     height: 400px;
 
     background-image: url("../img/map-tablet.jpg");
@@ -73,22 +73,22 @@
     }
   }
 
-  .contacts__wrapper {
+  .contacts-wrapper {
     height: 600px;
   }
 
-  .contacts__box {
+  .contacts-box {
     padding: 63px 72px 60px;
   }
 
-  .contacts__invite {
+  .contacts-invite {
     width: 155px;
 
     font-size: 20px;
     line-height: 25px;
   }
 
-  .contacts__adds {
+  .contacts-adds {
     width: 155px;
 
     font-size: 16px;
@@ -106,7 +106,7 @@
 }
 
 @media (min-width: @desktop-width) {
-  .contacts__map {
+  .contacts-map {
     height: 400px;
 
     background-image: url("../img/map-desktop.jpg");
@@ -116,13 +116,13 @@
     }
   }
 
-  .contacts__wrapper {
+  .contacts-wrapper {
     position: relative;
-    max-width: 1440px;
+    // max-width: 1440px;
     height: 400px;
   }
 
-  .contacts__box {
+  .contacts-box {
     position: absolute;
     top: 95px;
     left: @desktop-padding;
@@ -132,15 +132,15 @@
     padding: 65px 90px 60px 75px;
   }
 
-  .inner-page .contacts__box {
+  .inner-page .contacts-box {
     background-color: @bg-1;
   }
 
-  .contacts__invite {
+  .contacts-invite {
     width: 155px;
   }
 
-  .contacts__adds {
+  .contacts-adds {
     text-align: left;
   }
 
