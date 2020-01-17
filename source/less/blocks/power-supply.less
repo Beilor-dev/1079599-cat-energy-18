@@ -245,3 +245,17 @@
     margin-bottom: 30px;
   }
 }
+
+
+@media (min-width: @desktop-width) screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .power-supply__wrapper {
+    padding-right: 39px;
+  }
+
+  .power-supply__box  {
+    &:last-child {
+      margin-bottom: 0;
+      margin-left: 73px;
+    }
+  }
+}
