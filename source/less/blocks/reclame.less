@@ -123,37 +123,45 @@
 
 @media (min-width: @desktop-width) {
   .reclame {
-    position: relative;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 0;
-    padding: 0;
-    max-width: 1285px;
-    // min-height: 696px;
-    // margin-bottom: 80px;
-    // padding: 1px;
-
-    // background-image: url("../img/bg-desktop.jpg"),
-    //   linear-gradient(to right, @bg-1 50%, #64a83b 50%);
-    // background-position: top right;
-    // background-size: 50% auto, 100%;
-
-    // @media (min-resolution: @retina-dppx), (min-resolution: @retina-dpi) {
-    //   background-image: url("../img/bg-desktop@2x.jpg"),
-    //     linear-gradient(to right, @bg-1 50%, #64a83b 50%);
-    // }
+    min-height: 696px;
+    margin-bottom: 80px;
+    padding: 1px;
   }
 
   .reclame__wrapper {
-    display: flex;
-    flex-wrap: nowrap;
-    // position: relative;
+    position: relative;
 
-    // width: 1220px;
-    // min-height: 499px;
-    // margin: 142px auto 0;
-    // padding: 80px 0 0 80px;
+    width: 1220px;
+    min-height: 499px;
+    margin: 142px auto 0;
+    padding: 80px 0 0 80px;
   }
+
+  .reclame__wrapper::after {
+    content: "";
+    /* display: inline-block; */
+    /* position: absolute; */
+    vertical-align: middle;
+    /* z-index: -100; */
+    position: absolute;
+    // width: 720px;
+    height: 696px;
+    /* top: 57px; */
+    left: 608px;
+    top: -143px;
+    z-index: 0;
+    /* margin-top: -510px; */
+    margin-right: -38vw;
+    padding-right: 50vw;
+    background-image: url(../img/bg-desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: 718px;
+    background-position: 1px 0;
+    background-color: #63a73a;
+  }
+
+
+
 
   .reclame__title {
     width: 490px;
@@ -166,20 +174,20 @@
   }
 
   .reclame__image-box {
-    display: flex;
-    // position: absolute;
-    // top: 0;
-    // left: 0;
-    // bottom: -5px;
-    // right: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: -5px;
+    right: 0;
+    z-index: 1;
 
-    // width: 552px;
-    // height: 499px;
-    // margin: auto;
+    width: 552px;
+    height: 499px;
+    margin: auto;
 
-    // text-align: center;
+    text-align: center;
 
-    // transform: translateX(116px);
+    transform: translateX(116px);
   }
 
   .reclame__image {
