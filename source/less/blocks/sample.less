@@ -101,7 +101,7 @@
     justify-content: space-between;
     align-items: center;
     width: @tablet-width;
-    padding: 0 30px 80px;
+    padding: 0 30px 89px;
   }
 
   .sample__title {
@@ -122,7 +122,7 @@
 
   .sample__stats {
     justify-content: flex-start;
-    margin-bottom: 0;
+    margin-bottom: -58px;
   }
 
   .sample__value {
@@ -189,7 +189,7 @@
     overflow: hidden;
     background-image: linear-gradient(to bottom, #ffffff 200px, #f2f2f2 200px);
     background-size: 100%;
-
+    margin-bottom: -70px;
   }
 
   // .wrap {
@@ -197,21 +197,32 @@
   // }
 
   .sample__wrapper {
-    // position: absolute;
-    // top: 65px;
-    // right: 0;
-    // left: 0;
-    // z-index: 3;
+    // width: 435px;
+    // margin: auto;
+    // padding: 0;
+    // padding-top: 65px;
 
-    width: 435px;
-    margin: auto;
-    padding: 0;
-    padding-top: 65px;
+    // transform: translateX(-392px);
+    width: 50%;
+    // min-height: 462px;
+    // margin: 0 auto;
+    // padding: 65px 0px 0;
+    // margin-left: 431px;
+    // margin-top: -68px;
+    // -webkit-transform: translateX(-392px);
+    // transform: translateX(-392px);
+  }
 
-    transform: translateX(-392px);
+  .sample__wrapper-left-container {
+    width: 431px;
+    padding: 64px 0;
+    margin-left: 10px;
   }
 
   .sample__container {
+    display: flex;
+    width: 1300px;
+    margin: 0 auto;
     height: auto;
   }
 
@@ -237,6 +248,8 @@
   }
 
   .sample__cost {
+    text-align: left;
+
     span {
       display: inline-block;
       padding-top: 0;
@@ -245,19 +258,23 @@
   }
 }
 
-@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-  .sample__value_one {
-    left: 18px;
-  }
+// @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+//   .sample__value_one {
+//     left: 18px;
+//   }
 
-  .sample__value_two {
-    left: 19px;
-    bottom: -11px;
-  }
-}
+//   .sample__value_two {
+//     left: 19px;
+//     bottom: -11px;
+//   }
+// }
 
 
 @media (min-width: @desktop-width) screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .sample__wrapper {
+    width: 50.1%;
+  }
+
   .sample__value_one {
     left: 23px;
   }
